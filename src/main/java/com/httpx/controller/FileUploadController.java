@@ -13,11 +13,6 @@ import java.io.IOException;
 @Controller
 public class FileUploadController {
 
-    @GetMapping(value = "/index")
-    public  String index(){
-        return "index";
-    }
-
 
     @PostMapping(value = "/upload")
     public ModelAndView fileUpload(MultipartFile file){
